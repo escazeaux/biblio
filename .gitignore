@@ -3,6 +3,7 @@ myvenv
 config.py
 todo
 
+*.back
 *.pyc
 *~
 /.vscode

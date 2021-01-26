@@ -1,0 +1,8 @@
+
+Todo pour Yew Mun & Brais
+
+- DONE pb de taille des Thumbnails => due to the different bootstrap.min.js file
+- DONE favicon
+
+- couleurs de Album à harmoniser avec la Home
+- dashboard à rajouter
