@@ -1,0 +1,10 @@
+howtos
+myvenv
+config.py
+todo
+
+*.pyc
+*~
+/.vscode
+__pycache__
+.DS_Store
