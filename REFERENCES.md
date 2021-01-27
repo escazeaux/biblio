@@ -19,7 +19,8 @@ https://onlinepngtools.com/create-transparent-png
 
 Python file management (uploading & processing files)
 https://viveksb007.wordpress.com/2018/04/07/uploading-processing-and-downloading-files-in-flask/
-https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/Python_FileText.html
+https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/Python_FileText.html (TOP)
+https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask
 
 FLASK PROJECT FILE STRUCTURE (+ tutorial)
 https://pythonbasics.org/flask-boilerplate/
