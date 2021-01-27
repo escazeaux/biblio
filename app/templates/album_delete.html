@@ -3,7 +3,7 @@
 {% extends "base.html" %}
 
 {% block title %}
-View extracted data
+Delete article
 {% endblock %}
 
 {% block head %}
@@ -16,15 +16,14 @@ View extracted data
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">{{ article_name }}</h1>
-        <br>
-        <p>{{ article_text }}</p>
+        <h1 class="fw-light">{{ article_name }} has been deleted</h1>
       </div>
     </div>
   </section>
 
   <section class="py-5 text-center container">
-        <p><a href="{{url_for('album')}}" class="btn btn-primary my-2">Back to Article View</a></p>
+    <p><a href="{{url_for('album')}}" class="btn btn-primary my-2">Back to Article View</a></p>
   </section>
+
 </main>
 {% endblock %}

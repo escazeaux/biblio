@@ -1,8 +1,19 @@
 
-Todo pour Yew Mun & Brais
+
 
 - DONE pb de taille des Thumbnails => due to the different bootstrap.min.js file
 - DONE favicon
+- DONE rajouter Dashboard, Signin, Register, Upload
 
+- remplacer les href="../static/css/bootstrap.min.css" par des références modifiables en python (STATIC_FOLDER...)
 - couleurs de Album à harmoniser avec la Home
-- dashboard à rajouter
+- rajouter un base.html & faire des extend base
+- DASHBOARD: header & footer => comme le teste
+- SIGNIN: centrer verticalement au milieu de la page + footer en bas de page
+- REGISTER: centrer + activer les JavaScripts (form validation cf. fin du fichier HTML) + rajouter champ password + format de l'arobase @
+- ALBUM - bug affichage
+
+- USERS - définir 3 catégories (unloggued + normal, admin, super-admin)
+- ALBUM_VIEW & DELETE - gros pb de sécurité (n'importe qui peut supprimer un fichier avec l'url) (=> limiter l'usage aux admins)
+- UPLOAD - test nb of files + size (handling max size errors) + no space in name + le faire plus joli (pour le message d'erreur)
+- rajouter DELETE, user authentication, wiki, todo/kanban

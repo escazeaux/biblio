@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+
+    <!-- Title -->
+    {% block title %}{% endblock %}
+
+    <!-- Bootstrap core CSS, Site main CSS, Favicon -->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="icon" href="../static/img/favicons/favicon.ico">
+
+    <!-- Scripts -->
+    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" defer></script>
+
+    {% block head %}{% endblock %}
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header>
+      <div class="navbar shadow-sm fixed-top">
+        <div class="container">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <img id="image_home" src="../static/img/transparent_covid.png"/>
+            <strong>Home</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="main_block">
+    {% block body %}
+    {% endblock %}
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+    <nav class="navbar navbar-expand-lg" id="footer">
+    	<p class="navbar">&copy; Covid Biblio 2021</p>
+    </nav>
+    </footer>
+
+  </body>
+</html>

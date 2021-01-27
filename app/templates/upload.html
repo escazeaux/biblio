@@ -1,0 +1,24 @@
+<!-- upload.html-->
+
+{% extends "base.html" %}
+
+{% block title %}
+Upload
+{% endblock %}
+
+{% block head %}
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="../static/css/signin.css">
+{% endblock %}
+
+{% block body %}
+<div class="signin_body text-center" method=post enctype=multipart/form-data>
+  <form class="form-signin" method=post enctype=multipart/form-data>
+    <img class="mb-4" src="../static/img/transparent_covid.png" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Upload new File</h1>
+    <h3>(names WITHOUT space, max {{ max_size_Mo }}Mo)</h3>
+    <input type="file" name='file' id="uploadFile" class="form-control" placeholder="File to upload" required autofocus>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" value="Upload">Upload</button>
+  </form>
+</div>
+{% endblock %}
