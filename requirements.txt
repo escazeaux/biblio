@@ -1,4 +1,7 @@
 Flask
+flask-sqlalchemy
+flask-login
+
 pypdf2
 
 pdfplumber
