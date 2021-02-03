@@ -1,39 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- register.html-->
 
-<head>
-	<title>Covid Biblio Landing page</title>
-	<!-- add bootstrap css file -->
-  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../static/css/main.css">
-	<!-- add Javasscript file from js file -->
-	<script type="text/javascript" src="../static/js/jquery.min.js" defer></script>
-	<script type="text/javascript" src="../static/js/bootstrap.min.js" defer></script>
-	<script type="text/javascript" src='../static/js/main.js' defer></script>
-	<script src="https://getbootstrap.com//docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" defer></script>
+{% extends "base.html" %}
 
-	<!-- favicon -->
-  <link rel="icon" href="../static/img/favicons/favicon.ico">
+{% block title %}
+Covid Biblio Homepage
+{% endblock %}
 
-</head>
+{% block head %}
+<meta name="description" content="">
+<script type="text/javascript" src="../static/js/jquery.min.js" defer></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js" defer></script>
+<script type="text/javascript" src='../static/js/main.js' defer></script>
+<script src="https://getbootstrap.com//docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" defer></script>
+{% endblock %}
 
-<!-- HEADER -->
-<header>
-<nav class="navbar navbar-expand-lg fixed-top" id="menu_top">
-	<img id="image_home" src="../static/img/transparent_covid.png"/>
-	<a class="navbar-brand" href="#">Home</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse " id="navbarSupportedContent">
-		<ul class="navbar-nav mr-4">
-			<li class="nav-item"><a class="nav-link" data-value="about" href="#">About</a></li>
-			<li class="nav-item"><a class="nav-link " data-value="team" href="#">Team</a></li>
-			<li class="nav-item"><a class="nav-link " data-value="contact" href="#">Contact</a></li>
-		</ul>
-	</div>
-</nav>
-</header>
+
+{% block body %}
+
 
 <!-- ABOUT US -->
 <div class="header ">
@@ -110,24 +93,4 @@
 		</form>
 	</div>
 </div>
-
-<!-- FOOTER -->
-<footer>
-<nav class="navbar navbar-expand-lg" id="footer">
-	<p class="navbar">&copy; Covid Biblio 2021</p>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse " id="navbarSupportedContent">
-		<ul class="navbar-nav mr-4">
-			<li class="nav-item"><a class="nav-link" data-value="about" href="#">About</a></li>
-			<li class="nav-item"><a class="nav-link " data-value="team" href="#">Team</a></li>
-			<li class="nav-item"><a class="nav-link " data-value="contact" href="#">Contact</a></li>
-		</ul>
-	</div>
-</nav>
-</footer>
-
-
-</body>
-</html>
+{% endblock %}

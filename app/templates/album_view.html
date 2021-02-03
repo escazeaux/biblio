@@ -21,10 +21,35 @@ View extracted data
         <p>{{ article_text }}</p>
       </div>
     </div>
+    <p class="lead text-muted">Thanks to our NLP tools, you can extract:</p>
+    <p class="lead text-muted">Abstract, Authors, Table of Contents, Text summarization, Images, Tables, Initial litterature review, References...
   </section>
 
   <section class="py-5 text-center container">
-    <p><a href="{{url_for('album')}}" class="btn btn-primary my-2">Back to Article View</a></p>
+    <div class="btn-group dropend">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Choose the information you want to extract
+      </button>
+
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <li><a class="dropdown-item" href="#">Brais, Yew Mun, play here first to insert you action</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item disabled" href="#">Abstract</a></li>
+      <li><a class="dropdown-item disabled" href="#">Authors</a></li>
+      <li><a class="dropdown-item disabled" href="#">Table of Contents</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item disabled" href="#">Text summarization</a></li>
+      <li><a class="dropdown-item disabled" href="#">Images</a></li>
+      <li><a class="dropdown-item disabled" href="#">Tables</a></li>
+      <li><a class="dropdown-item disabled" href="#">Initial litterature review</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item disabled" href="#">References</a></li>
+    </ul>
+  </div>
+  </section>
+
+  <section class="py-5 text-center container">
+    <p><a href="{{url_for('main.album')}}" class="btn btn-primary my-2">Back to Article View</a></p>
   </section>
 </main>
 {% endblock %}

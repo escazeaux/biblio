@@ -4,6 +4,7 @@
 CONFIG.py
 - one variable / line
 - example: DEBUG = True
+- loaded in the __init__.py
 
 BIGGER APPS:
   - have different config.py files for tests, dev & prod
@@ -18,3 +19,5 @@ SECURITY:
 # Enable Flask's debugging features. Should be False in production
 DEBUG = True
 MAX_CONTENT_LENGTH = 3 * 1024 * 1024
+SECRET_KEY = 'mySecretKey'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite'
